@@ -32,10 +32,9 @@ public class FakeTest {
     DeynService deynService = new DeynService(deynRepo);
 
     Books books = new Books(1, "Somaliada", 500);
-    Books book4 = new Books(2, "angered", 700);
+
     Collection<Books> book = new ArrayList<>();
     book.add(books);
-    book.add(book4);
 
     Mockito.when(deynRepo.findByAll()).thenReturn(book);
 
